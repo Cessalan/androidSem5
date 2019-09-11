@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mygradient_drawable"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/carWashTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp"
+        android:text="@string/app_name"
+        android:textColor="#E91E63"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/discountTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/carWashTxt"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp"
+        android:text="@string/discountTxt"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/washNumber"
+        android:hint="@string/washNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="25sp"
+        android:layout_below="@id/discountTxt"
+        android:layout_centerHorizontal="true"
+        />
+
+    <RadioGroup
+        android:id="@+id/exteriorChoiceGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/discountTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:paddingTop="80dp"
+        android:paddingBottom="30dp">
+
+
+        <RadioButton
+            android:id="@+id/exterior5bucks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/exterior5bucks"
+            android:textSize="22sp" />
+
+        <RadioButton
+            android:id="@+id/exterior10bucks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/exterior5bucks"
+            android:checked="true"
+            android:text="@string/exterior10bucks"
+            android:textSize="22sp" />
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/calculate_btn"
+        android:layout_width="265dp"
+        android:layout_height="61dp"
+        android:layout_below="@id/exteriorChoiceGroup"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp"
+        android:text="CALCULATE PACKAGE"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/finalPrice_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calculate_btn"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="40dp"
+        android:text="$90.00"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/wash_img"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:layout_below="@+id/finalPrice_tv"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/carwash" />
+</RelativeLayout>
+
