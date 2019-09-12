@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">Car Wash Packages</string>
     <string name="exterior5bucks">Exterior Only $5</string>
-    <string name="exterior10bucks">Exterior With Interior Vaccum ($10)</string>
+    <string name="exterior10bucks">Exterior With Interior Vacuum ($10)</string>
     <string name="washNumber">Enter the number of washes desired</string>
     <string name="discountTxt">Buy 12+washes for a 25% discount</string>
+    <string name="calculate_btn">CALCULATE PACKAGE</string>
+    <string name="finalPrice_TV">$90.00</string>
 </resources>
